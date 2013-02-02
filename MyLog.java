@@ -32,7 +32,7 @@ public final class MyLog {
     public static void v(Object obj, final String msg){
         if(!DebugMode)
             return;
-        Log.e(obj == null ? "null" : obj.getClass().getSimpleName(), msg == null ? "null" : msg);
+        Log.v(obj == null ? "null" : obj.getClass().getSimpleName(), msg == null ? "null" : msg);
     }
     
     /**
