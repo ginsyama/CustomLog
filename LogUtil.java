@@ -3,20 +3,20 @@ package utils;
 import android.util.Log;
 
 /**
- * 通常のログの欠点
- * ・null文字のラップ
- * ・LogCatの表示切替
+ * wrap a null character</br>
+ * Display log switch</br>
+ * 
  * @author ginsyama
  *
  */
-public final class MyLog {
-    /**true:表示 false:非表示*/
+public final class LogUtil {
+    /**true:show false:hidden*/
     private static Boolean DebugMode = true;
     
     /**
-     * デバッグログ
-     * @param obj 実行クラス
-     * @param msg メッセージ
+     * debug log
+     * @param obj class
+     * @param msg message
      */
     public static void d(Object obj, final String msg){
         if(!DebugMode)
@@ -25,9 +25,9 @@ public final class MyLog {
     }
     
     /**
-     * 冗長ログ
-     * @param obj 実行クラス
-     * @param msg メッセージ
+     * verbose log
+     * @param obj class
+     * @param msg message
      */
     public static void v(Object obj, final String msg){
         if(!DebugMode)
@@ -36,9 +36,9 @@ public final class MyLog {
     }
     
     /**
-     * 情報ログ
-     * @param obj 実行クラス
-     * @param msg メッセージ
+     * info log
+     * @param obj class
+     * @param msg message
      */
     public static void i(Object obj, final String msg){
         if(!DebugMode)
@@ -47,9 +47,9 @@ public final class MyLog {
     }
     
     /**
-     * 警告ログ
-     * @param obj 実行クラス
-     * @param msg メッセージ
+     * warring log
+     * @param obj class
+     * @param msg message
      */
     public static void w(Object obj, final String msg){   
         if(!DebugMode)
@@ -58,9 +58,9 @@ public final class MyLog {
     }
     
     /**
-     * エラーログ
-     * @param obj 実行クラス
-     * @param msg　メッセージ
+     * error log
+     * @param obj class
+     * @param msg message
      */
     public static void e(Object obj, final String msg){
         if(!DebugMode)
