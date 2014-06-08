@@ -1,0 +1,4 @@
+CustomLog
+=========
+
+Android用のLogUtilクラス
